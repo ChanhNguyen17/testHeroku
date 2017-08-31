@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: TEST_VAR });
+  res.render('index', { title: process.env.TEST_VAR });
 });
 
 module.exports = router;
